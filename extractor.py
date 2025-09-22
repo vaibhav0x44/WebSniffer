@@ -6,10 +6,10 @@ from urllib.parse import urljoin
 
 def dns_lookup(domain):
     try:
-        # Perform DNS A record lookup for the domain
+        # DNS (AAAA) record lookup 
         answers = dns.resolver.resolve(domain, 'A')
         
-        # Extract IP addresses from the answers
+        # Extract IP addresses
         ip_addresses = [answer.address for answer in answers]
         
         return ip_addresses
@@ -24,10 +24,10 @@ def dns_lookup(domain):
 
 def check_robots_txt(domain):
     try:
-        # Construct the URL for the robots.txt file
+        # Adjoin URL + robots.txt
         url = f"http://{domain}/robots.txt"
         
-        # Send a GET request to fetch the robots.txt file
+        # Send GET request to fetch the robots.txt file
         response = requests.get(url)
         
         if response.status_code == 200:
