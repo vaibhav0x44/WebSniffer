@@ -1,5 +1,7 @@
 #!/usr/bin/env python3   
 
+# Only Compatible with Linux Env.
+
 #*****Lib.Section*****
 
 import os 
