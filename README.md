@@ -1,4 +1,4 @@
-# EXTRACT_X_R
+WebSniffer is a Command Line Information Gathering Tool Built in Python 3.x . It Basically Asks For Domain Name to Enumerate different URL Based Parameter , Website  Endpoints , Ip address . and Sensitive Files enumeration 
 
 PYTHON TOOL {LINUX BASH ENVIRNOMENT}
 
