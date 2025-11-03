@@ -1,0 +1,15 @@
+{
+    "IP Address ": [
+        "137.74.187.103",
+        "137.74.187.100",
+        "137.74.187.102",
+        "137.74.187.104",
+        "137.74.187.101"
+    ],
+    "Robots File ": "User-agent: *\nDisallow: /missions/\nDisallow: /killing/all/humans/\n",
+    "Directory Endpoints ": [
+        "Found: http://hackthissite.org/account",
+        "Found: http://hackthissite.org/register",
+        "Forbidden: http://hackthissite.org/info"
+    ]
+}
