@@ -130,8 +130,6 @@ def wait():
 if __name__ == "__main__":
     main()
 
-    print(banner);newlines()
-
     if "--capture-only" in sys.argv:
         livePacket_capture("eth0")
         sys.exit()
@@ -139,6 +137,7 @@ if __name__ == "__main__":
     elif os.name == "posix" : 
         subprocess.Popen(['xterm', '-e', 'python3', 'websniffer.py','--capture-only'])
 
+        print(banner);newlines()
         domain_name = input("Enter the domain name: ")
         #capture_thread = threading.Thread(target=livePacket_capture , args = ("eth0",) , daemon = True )
         #capture_thread.start()
@@ -171,8 +170,9 @@ if __name__ == "__main__":
                     json_results = json.dumps(result0(ips , robots_txt_content , directory_results ) , indent=4)
                     recon_resultPath.write_text(json_results)
 
-    elif os.name == "nt" :
-
+    elif os.name == "nt" : 
+    
+        print(banner);newlines()
         domain_name = input("Enter the domain name: ")
         # Perform DNS lookup
         ips = dns_lookup(domain_name)
