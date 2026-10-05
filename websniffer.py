@@ -28,6 +28,8 @@ $$/      $$/  $$$$$$$/ $$$$$$$/   $$$$$$/  $$/   $$/ $$/ $$/       $$/      $$$$
 
 #**********************
 
+def newlines():
+    print("\n")
 
 """Function Block"""
 
@@ -120,8 +122,6 @@ def main() :
     else : 
         print("===Windows-nt===");newlines();newlines()
 
-def newlines():
-    print("\n")
 
 def wait():
     t.sleep(3)
